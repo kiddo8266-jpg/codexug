@@ -1,0 +1,423 @@
+// Company Data Constants
+
+export const COMPANY_INFO = {
+  name: "CodexUg",
+  tagline: "Empowering Businesses Through Technology",
+  description:
+    "CodexUg is a premier IT products and services company providing cutting-edge technology solutions to businesses across Uganda and East Africa.",
+  email: "info.codex2024@gmail.com",
+  phone: "0768827827",
+  founded: "2024",
+  social: {
+    linkedin: "https://linkedin.com/in/okeng-kenneth/",
+    facebook: "https://facebook.com/codexug",
+    twitter: "https://twitter.com/codexug",
+    tiktok: "https://tiktok.com/@codexug",
+    youtube: "https://youtube.com/@codexug",
+  },
+};
+
+export const STATS = [
+  { label: "Happy Clients", value: 500, suffix: "+" },
+  { label: "Projects Completed", value: 1000, suffix: "+" },
+  { label: "Certifications", value: 50, suffix: "+" },
+  { label: "Years Experience", value: 10, suffix: "+" },
+];
+
+export const SERVICES = [
+  {
+    id: "cybersecurity",
+    icon: "Shield",
+    title: "Cybersecurity & Network Security",
+    shortDescription:
+      "Protect your business with enterprise-grade security solutions and threat intelligence.",
+    fullDescription:
+      "Our comprehensive cybersecurity services safeguard your digital assets from evolving threats. We provide end-to-end security solutions tailored to your business needs.",
+    features: [
+      "Penetration testing & vulnerability assessments",
+      "Firewall configuration & management",
+      "Security audits & compliance consulting",
+      "Incident response & recovery",
+      "Security awareness training",
+      "SIEM implementation & monitoring",
+    ],
+  },
+  {
+    id: "cloud",
+    icon: "Cloud",
+    title: "Cloud Infrastructure & Migration",
+    shortDescription:
+      "Seamlessly migrate and optimize your workloads on AWS, Azure, and GCP.",
+    fullDescription:
+      "We help businesses harness the power of cloud computing with strategic migration planning, optimization, and ongoing management across all major cloud platforms.",
+    features: [
+      "AWS, Azure & GCP cloud setup",
+      "Migration planning & execution",
+      "Cloud cost optimization",
+      "Hybrid cloud solutions",
+      "Disaster recovery planning",
+      "Cloud security & compliance",
+    ],
+  },
+  {
+    id: "consulting",
+    icon: "Briefcase",
+    title: "IT Consulting & Strategy",
+    shortDescription:
+      "Strategic technology guidance to align IT with your business goals.",
+    fullDescription:
+      "Our experienced consultants help you navigate the complex technology landscape, developing roadmaps that drive digital transformation and business growth.",
+    features: [
+      "Digital transformation roadmaps",
+      "IT infrastructure planning",
+      "Technology audits & assessments",
+      "Vendor management & negotiation",
+      "Cost optimization strategies",
+      "IT governance & compliance",
+    ],
+  },
+  {
+    id: "development",
+    icon: "Code",
+    title: "Web & Mobile App Development",
+    shortDescription:
+      "Custom digital solutions built with modern technologies for maximum performance.",
+    fullDescription:
+      "We design and develop stunning, high-performance web and mobile applications that deliver exceptional user experiences and drive business results.",
+    features: [
+      "Custom website development",
+      "E-commerce solutions",
+      "Progressive web apps (PWA)",
+      "Mobile apps (iOS & Android)",
+      "UI/UX design & prototyping",
+      "API development & integration",
+    ],
+  },
+  {
+    id: "managed-it",
+    icon: "Headphones",
+    title: "Managed IT Support & Helpdesk",
+    shortDescription:
+      "24/7 proactive monitoring and support to keep your business running smoothly.",
+    fullDescription:
+      "Our managed IT services provide comprehensive support, monitoring, and maintenance so you can focus on your core business while we handle your technology needs.",
+    features: [
+      "24/7 system monitoring",
+      "Remote & on-site support",
+      "System maintenance & updates",
+      "Patch management",
+      "User training & onboarding",
+      "IT asset management",
+    ],
+  },
+  {
+    id: "data-analytics",
+    icon: "BarChart",
+    title: "Data Analytics & Business Intelligence",
+    shortDescription:
+      "Transform raw data into actionable insights that drive informed decisions.",
+    fullDescription:
+      "We help organizations leverage their data through advanced analytics, interactive dashboards, and AI-powered insights that reveal hidden opportunities.",
+    features: [
+      "Data visualization & dashboards",
+      "Predictive analytics & ML",
+      "Database design & management",
+      "Business reporting solutions",
+      "Data pipeline automation",
+      "Data governance & quality",
+    ],
+  },
+  {
+    id: "hardware",
+    icon: "Server",
+    title: "Hardware Installation & Maintenance",
+    shortDescription:
+      "Professional hardware solutions from procurement to installation and ongoing support.",
+    fullDescription:
+      "We provide comprehensive hardware services including procurement, deployment, and preventive maintenance to ensure your infrastructure operates at peak performance.",
+    features: [
+      "Server setup & configuration",
+      "Workstation deployment",
+      "Hardware troubleshooting",
+      "Preventive maintenance programs",
+      "Equipment upgrades & refreshes",
+      "Hardware lifecycle management",
+    ],
+  },
+  {
+    id: "networking",
+    icon: "Network",
+    title: "Network Design & Implementation",
+    shortDescription:
+      "Robust, scalable network infrastructure designed for performance and security.",
+    fullDescription:
+      "Our network engineers design and implement enterprise-grade network solutions that provide reliable connectivity, enhanced security, and optimal performance.",
+    features: [
+      "LAN/WAN design & implementation",
+      "Wireless network solutions",
+      "VPN setup & management",
+      "Network monitoring & optimization",
+      "Structured cabling",
+      "Network security hardening",
+    ],
+  },
+];
+
+export const PRODUCTS = [
+  {
+    id: "laptops",
+    title: "Laptops, Desktops & Workstations",
+    description:
+      "High-performance computing solutions for professionals and enterprises. From lightweight ultrabooks to powerful workstations.",
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
+    priceRange: "From UGX 1,200,000",
+    category: "Computing",
+  },
+  {
+    id: "servers",
+    title: "Servers & Storage Solutions",
+    description:
+      "Enterprise-grade servers and storage systems for reliable data management and business continuity.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    priceRange: "From UGX 8,500,000",
+    category: "Infrastructure",
+  },
+  {
+    id: "networking",
+    title: "Networking Equipment",
+    description:
+      "Professional routers, managed switches, and enterprise firewalls for secure, high-speed connectivity.",
+    image:
+      "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800&q=80",
+    priceRange: "From UGX 450,000",
+    category: "Networking",
+  },
+  {
+    id: "software",
+    title: "Software Licenses",
+    description:
+      "Genuine software licenses including Microsoft 365, Windows Server, antivirus solutions, and business productivity tools.",
+    image:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+    priceRange: "From UGX 150,000/year",
+    category: "Software",
+  },
+  {
+    id: "cctv",
+    title: "CCTV & Surveillance Systems",
+    description:
+      "Complete IP camera systems, NVR/DVR solutions, and remote monitoring for comprehensive security coverage.",
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+    priceRange: "From UGX 750,000",
+    category: "Security",
+  },
+  {
+    id: "ups",
+    title: "UPS & Power Backup Solutions",
+    description:
+      "Uninterruptible power supplies and generator solutions to protect your equipment from power disruptions.",
+    image:
+      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+    priceRange: "From UGX 350,000",
+    category: "Power",
+  },
+  {
+    id: "cloud-hosting",
+    title: "Cloud Hosting Packages",
+    description:
+      "Managed cloud hosting with guaranteed uptime, SSL certificates, daily backups, and 24/7 support.",
+    image:
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+    priceRange: "From UGX 80,000/month",
+    category: "Cloud",
+  },
+  {
+    id: "printers",
+    title: "Printers & Peripherals",
+    description:
+      "High-quality printers, scanners, projectors, and office peripherals from leading brands.",
+    image:
+      "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=800&q=80",
+    priceRange: "From UGX 280,000",
+    category: "Peripherals",
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: "NL Josephine's Apartment",
+    website: "nljosephinespartment.com",
+    quote:
+      "CodexUg transformed our IT infrastructure and helped us scale our business. Their network security and cloud solutions are top-notch. We highly recommend their services!",
+    role: "Property Management Company",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "TechStart Uganda",
+    website: "techstartug.com",
+    quote:
+      "Exceptional service from start to finish. The team at CodexUg understood our needs perfectly and delivered a solution that exceeded our expectations.",
+    role: "Technology Startup",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Kampala Business Hub",
+    website: "kampalabiz.co.ug",
+    quote:
+      "Their 24/7 support team is incredibly responsive. We've never had better IT support. CodexUg is truly a partner you can trust.",
+    role: "Business Incubator",
+    rating: 5,
+  },
+];
+
+export const FAQS = [
+  {
+    question: "What types of businesses do you serve?",
+    answer:
+      "We serve businesses of all sizes, from startups and SMEs to large enterprises across various industries including hospitality, finance, healthcare, retail, and education. Our solutions are scalable and customized to meet your specific needs.",
+  },
+  {
+    question: "How much do your IT services cost?",
+    answer:
+      "Our pricing varies based on the scope and complexity of services required. We offer flexible pricing models including one-time project fees, monthly retainers, and pay-as-you-go options. Contact us for a free consultation and customized quote.",
+  },
+  {
+    question: "Do you provide 24/7 IT support?",
+    answer:
+      "Yes! Our managed IT support packages include 24/7 monitoring and support. We have a dedicated helpdesk team available around the clock to address critical issues and minimize downtime for your business.",
+  },
+  {
+    question: "How long does a typical IT project take?",
+    answer:
+      "Project timelines vary depending on complexity. A simple website might take 2-4 weeks, while a full cloud migration or network overhaul could take 2-3 months. We provide detailed project timelines during the planning phase and keep you updated throughout.",
+  },
+  {
+    question: "Are your IT professionals certified?",
+    answer:
+      "Absolutely. Our team is led by Mask o Kenneth, a certified Computer Scientist with certifications in Network Security, Cloud Engineering (AWS, Azure, GCP), and Information Technology. All our engineers hold relevant industry certifications.",
+  },
+  {
+    question: "Do you sell hardware products?",
+    answer:
+      "Yes, we supply a wide range of IT hardware including laptops, desktops, servers, networking equipment, CCTV systems, UPS units, and more. We source from reputable brands and provide warranty and after-sale support.",
+  },
+  {
+    question: "Can you help migrate our business to the cloud?",
+    answer:
+      "Yes, cloud migration is one of our core specializations. We handle migrations to AWS, Azure, and Google Cloud Platform, including planning, data migration, testing, and post-migration optimization to ensure a seamless transition.",
+  },
+  {
+    question: "How do you ensure the security of our data?",
+    answer:
+      "We follow industry best practices and international security standards. Our approach includes regular security audits, data encryption, access control policies, backup solutions, and compliance with relevant data protection regulations.",
+  },
+  {
+    question: "Do you offer training for our staff?",
+    answer:
+      "Yes, we provide IT training and workshops covering topics such as cybersecurity awareness, software tools, system administration, and best practices. Training can be conducted on-site or remotely based on your preference.",
+  },
+  {
+    question: "How do I get started with CodexUg?",
+    answer:
+      "Getting started is easy! Contact us via phone, email, or our contact form for a free initial consultation. We'll assess your needs, propose a tailored solution, and provide a detailed quote. There's no obligation and the consultation is completely free.",
+  },
+];
+
+export const BLOG_POSTS = [
+  {
+    id: 1,
+    title: "5 Cybersecurity Threats Every Business Must Know in 2024",
+    excerpt:
+      "As cyber threats evolve, businesses must stay ahead. Discover the top five cybersecurity threats targeting organizations in 2024 and how to protect your business.",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+    date: "2024-12-15",
+    category: "Cybersecurity",
+    readTime: "5 min read",
+    slug: "cybersecurity-threats-2024",
+  },
+  {
+    id: 2,
+    title: "Cloud Computing Trends Transforming East African Businesses",
+    excerpt:
+      "Cloud adoption is accelerating across East Africa. Learn how businesses are leveraging AWS, Azure, and GCP to drive growth, reduce costs, and improve agility.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+    date: "2024-11-28",
+    category: "Cloud Computing",
+    readTime: "7 min read",
+    slug: "cloud-computing-trends-east-africa",
+  },
+  {
+    id: 3,
+    title: "Why Every Business Needs a Managed IT Service Provider",
+    excerpt:
+      "Managing IT in-house can be costly and complex. Discover how partnering with a Managed Service Provider (MSP) can improve your operations and reduce downtime.",
+    image:
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80",
+    date: "2024-11-10",
+    category: "IT Strategy",
+    readTime: "4 min read",
+    slug: "why-businesses-need-msp",
+  },
+  {
+    id: 4,
+    title: "The Complete Guide to Network Security for SMEs",
+    excerpt:
+      "Small and medium enterprises are increasingly targeted by cybercriminals. This comprehensive guide covers essential network security measures for SMEs.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+    date: "2024-10-22",
+    category: "Cybersecurity",
+    readTime: "8 min read",
+    slug: "network-security-guide-smes",
+  },
+  {
+    id: 5,
+    title: "Digital Transformation: A Roadmap for Ugandan Businesses",
+    excerpt:
+      "Digital transformation is no longer optional. Explore how Ugandan businesses can embrace technology to improve efficiency, reach new customers, and compete globally.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    date: "2024-10-05",
+    category: "IT Strategy",
+    readTime: "6 min read",
+    slug: "digital-transformation-roadmap-uganda",
+  },
+  {
+    id: 6,
+    title: "Choosing the Right Hardware for Your Business: A Buyer's Guide",
+    excerpt:
+      "From laptops to servers, making the right hardware choices can significantly impact productivity and costs. Here's what to consider when purchasing IT equipment.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    date: "2024-09-18",
+    category: "Hardware",
+    readTime: "5 min read",
+    slug: "choosing-business-hardware-guide",
+  },
+];
+
+export const CERTIFICATIONS = [
+  { name: "AWS Certified Solutions Architect", issuer: "Amazon Web Services" },
+  { name: "Microsoft Azure Administrator", issuer: "Microsoft" },
+  { name: "Google Cloud Professional", issuer: "Google Cloud" },
+  { name: "CompTIA Security+", issuer: "CompTIA" },
+  { name: "Certified Network Security Specialist", issuer: "ICSI" },
+  { name: "CCNA - Cisco Certified", issuer: "Cisco" },
+];
+
+export const NAV_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Products", href: "/products" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+];
