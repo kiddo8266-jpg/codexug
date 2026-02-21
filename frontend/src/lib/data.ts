@@ -161,6 +161,125 @@ export const SERVICES = [
       "Network security hardening",
     ],
   },
+  {
+    id: "biometric-access",
+    icon: "Fingerprint",
+    title: "Biometric & Access Control",
+    shortDescription:
+      "Secure your premises with modern biometric authentication and access management systems.",
+    fullDescription:
+      "We design and deploy advanced biometric and physical access control solutions that restrict unauthorized entry, provide audit trails, and integrate with your existing security infrastructure.",
+    features: [
+      "Fingerprint & facial recognition systems",
+      "Door access control installation",
+      "Time & attendance management",
+      "Visitor management systems",
+      "Integration with CCTV & alarms",
+      "Remote access management",
+    ],
+  },
+  {
+    id: "cctv",
+    icon: "Camera",
+    title: "CCTV Installation & Management",
+    shortDescription:
+      "End-to-end CCTV surveillance solutions for offices, homes, and large facilities.",
+    fullDescription:
+      "Our certified technicians supply, install, and manage IP and HD CCTV systems tailored to your site layout. We provide ongoing monitoring, maintenance, and remote viewing capabilities.",
+    features: [
+      "IP & HD camera supply and installation",
+      "NVR/DVR configuration & management",
+      "Remote monitoring & live view setup",
+      "Night-vision & PTZ camera solutions",
+      "Storage sizing & cloud backup",
+      "Preventive maintenance & health checks",
+    ],
+  },
+  {
+    id: "it-training",
+    icon: "GraduationCap",
+    title: "IT Training & Certifications",
+    shortDescription:
+      "Practical IT training programmes to upskill your team and earn industry-recognised certifications.",
+    fullDescription:
+      "We deliver hands-on training courses for both individuals and corporate teams, covering a wide range of networking, hardware, software, and general IT topics leading to recognised certifications.",
+    features: [
+      "HCIA (Huawei Certified ICT Associate) training",
+      "CCNA (Cisco Certified Network Associate) preparation",
+      "Hardware assembly, repair & troubleshooting",
+      "Software installation, configuration & support",
+      "General IT literacy & productivity tools",
+      "Customised corporate training workshops",
+    ],
+  },
+  {
+    id: "custom-pc",
+    icon: "Cpu",
+    title: "Custom PC Building",
+    shortDescription:
+      "Purpose-built desktop computers and workstations configured to your exact performance needs.",
+    fullDescription:
+      "Whether you need a high-performance workstation for design, a gaming rig, or cost-effective office PCs, we source quality components and assemble, test, and deliver systems optimised for your workload.",
+    features: [
+      "Component selection & procurement",
+      "Assembly & cable management",
+      "OS installation & driver configuration",
+      "Stress-testing & quality assurance",
+      "Warranty & after-build support",
+      "Upgrades to existing desktops",
+    ],
+  },
+  {
+    id: "system-design",
+    icon: "Layers",
+    title: "System Design & Implementation",
+    shortDescription:
+      "End-to-end design and deployment of complete IT systems aligned to your business architecture.",
+    fullDescription:
+      "We architect and implement holistic IT systems that integrate hardware, software, networking, and security into a coherent, scalable solution. Our approach ensures every component works in harmony to meet your operational requirements.",
+    features: [
+      "IT infrastructure architecture & blueprinting",
+      "Hardware & software integration",
+      "Scalability & redundancy planning",
+      "System documentation & handover",
+      "Performance benchmarking & tuning",
+      "Ongoing system health reviews",
+    ],
+  },
+  {
+    id: "digital-content",
+    icon: "LayoutDashboard",
+    title: "Digital & Content Management",
+    shortDescription:
+      "Streamline your digital presence with professional content management and digital strategy services.",
+    fullDescription:
+      "We help businesses establish, organise, and maintain their digital content ecosystem — from website content management systems to social media channels — ensuring a consistent and professional online presence.",
+    features: [
+      "CMS setup & configuration (WordPress, Strapi, etc.)",
+      "Content strategy & planning",
+      "Social media management & scheduling",
+      "SEO optimisation & content audits",
+      "Digital asset organisation & storage",
+      "Analytics & performance reporting",
+    ],
+  },
+  {
+    id: "custom-app",
+    icon: "AppWindow",
+    title: "Custom App Development",
+    shortDescription:
+      "Bespoke internal tools, automation solutions, and MVPs built to solve your specific business challenges.",
+    fullDescription:
+      "Beyond standard web and mobile development, we build tailor-made applications for internal operations — from workflow automation and system integrations to custom CRM/ERP modules and rapid MVP prototypes for startups.",
+    features: [
+      "Custom internal tools & admin dashboards",
+      "Workflow automation & process digitisation",
+      "Third-party API & system integrations",
+      "MVP development for startups",
+      "Desktop application development",
+      "Custom CRM, ERP & inventory modules",
+    ],
+  },
 ];
 
 export const PRODUCTS = [
