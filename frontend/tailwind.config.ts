@@ -37,7 +37,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "sans-serif"],
+        sans: ["Inter", "'Segoe UI'", "system-ui", "-apple-system", "sans-serif"],
       },
       backgroundImage: {
         "navy-to-cyan": "linear-gradient(135deg, #0A1628 0%, #06B6D4 100%)",

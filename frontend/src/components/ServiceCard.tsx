@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Shield, Cloud, Briefcase, Code, Headphones, BarChart2, Server, Network } from "lucide-react";
+import { ChevronDown, Shield, Cloud, Briefcase, Code, Headphones, BarChart2, Server, Network, type LucideIcon } from "lucide-react";
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap: Record<string, LucideIcon> = {
   Shield,
   Cloud,
   Briefcase,
