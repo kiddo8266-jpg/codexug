@@ -15,6 +15,13 @@ We offer comprehensive IT solutions including:
 - 🖥️ Hardware Supply & Installation
 - 📊 Data Analytics & Business Intelligence
 - 🛠️ Managed IT Support & Helpdesk
+- 👁️ Biometric & Access Control
+- 📷 CCTV Installation & Management
+- 🎓 IT Training & Certifications
+- 🖥️ Custom PC Building
+- 🏗️ System Design & Implementation
+- 📋 Digital & Content Management
+- 🔧 Custom App Development
 
 ---
 
