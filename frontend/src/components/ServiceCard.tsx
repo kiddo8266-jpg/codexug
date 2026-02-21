@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Shield, Cloud, Briefcase, Code, Headphones, BarChart2, Server, Network, type LucideIcon } from "lucide-react";
+import { ChevronDown, Shield, Cloud, Briefcase, Code, Headphones, BarChart2, Server, Network, Fingerprint, Camera, GraduationCap, Cpu, Layers, LayoutDashboard, AppWindow, type LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
   Shield,
@@ -13,6 +13,13 @@ const iconMap: Record<string, LucideIcon> = {
   BarChart: BarChart2,
   Server,
   Network,
+  Fingerprint,
+  Camera,
+  GraduationCap,
+  Cpu,
+  Layers,
+  LayoutDashboard,
+  AppWindow,
 };
 
 interface ServiceCardProps {
