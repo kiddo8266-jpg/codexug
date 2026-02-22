@@ -16,6 +16,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import { SERVICES, TESTIMONIALS } from "@/lib/data";
+import { getContent } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "CodexUg - Empowering Businesses Through Technology",
@@ -55,6 +56,7 @@ const differentiators = [
 ];
 
 export default function HomePage() {
+  const content = getContent();
   // Pick first 6 services for the overview
   const featuredServices = SERVICES.slice(0, 6);
 
@@ -144,7 +146,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Counter */}
-      <StatsCounter />
+      <StatsCounter stats={content.stats} />
 
       {/* Testimonials */}
       <section className="py-20 bg-[#0A1628]">

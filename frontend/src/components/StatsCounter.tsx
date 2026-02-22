@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { STATS } from "@/lib/data";
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const [count, setCount] = useState(0);
@@ -33,12 +32,16 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
   );
 }
 
-export default function StatsCounter() {
+export default function StatsCounter({
+  stats,
+}: {
+  stats: { label: string; value: number; suffix: string }[];
+}) {
   return (
     <section className="py-20 bg-[#06B6D4]/5 border-y border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {STATS.map((stat, index) => (
+          {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
               initial={{ opacity: 0, y: 30 }}

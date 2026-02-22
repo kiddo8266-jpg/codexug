@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import StatsCounter from "@/components/StatsCounter";
-import { CERTIFICATIONS, COMPANY_INFO } from "@/lib/data";
+import { getContent } from "@/lib/content";
 import { CheckCircle, Award, Target, Eye, Heart, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -30,6 +30,8 @@ const values = [
 ];
 
 export default function AboutPage() {
+  const content = getContent();
+  const { founder, certifications, companyInfo } = content;
   return (
     <div className="pt-20">
       {/* Hero */}
@@ -83,14 +85,14 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] max-w-sm mx-auto lg:mx-0">
                 <Image
-                  src="public/images/kenneth.jpg"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
                   alt="Mask o Kenneth - Founder of CodexUg"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/80 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white font-bold text-xl">Mask o Kenneth</p>
+                  <p className="text-white font-bold text-xl">{founder.name}</p>
                   <p className="text-cyan-400 text-sm">Founder & CEO, CodexUg</p>
                 </div>
               </div>
@@ -101,25 +103,19 @@ export default function AboutPage() {
 
             {/* Content */}
             <div>
-              <h3 className="text-white font-bold text-2xl mb-2">Mask o Kenneth</h3>
-              <p className="text-cyan-400 font-medium mb-6">Computer Scientist & IT Expert</p>
+              <h3 className="text-white font-bold text-2xl mb-2">{founder.name}</h3>
+              <p className="text-cyan-400 font-medium mb-6">{founder.role}</p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Mask o Kenneth is a highly accomplished computer scientist with deep expertise
-                across multiple domains of information technology. With a passion for solving
-                complex business challenges through technology, he founded CodexUg to provide
-                world-class IT services to businesses in Uganda and East Africa.
+                {founder.bio1}
               </p>
               <p className="text-gray-300 leading-relaxed mb-8">
-                His extensive certifications and hands-on experience in network security, cloud
-                engineering, and IT infrastructure make him one of the most qualified IT
-                professionals in the region. Under his leadership, CodexUg has delivered
-                transformative technology solutions to over 500 clients.
+                {founder.bio2}
               </p>
 
               {/* Certifications */}
               <h4 className="text-white font-semibold mb-4">Professional Certifications</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {CERTIFICATIONS.map((cert) => (
+                {certifications.map((cert: { name: string; issuer: string }) => (
                   <div key={cert.name} className="flex items-start gap-2">
                     <CheckCircle size={16} className="text-cyan-400 mt-0.5 shrink-0" />
                     <div>
@@ -132,7 +128,7 @@ export default function AboutPage() {
 
               <div className="mt-8">
                 <a
-                  href={COMPANY_INFO.social.linkedin}
+                  href={companyInfo.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200"
@@ -147,7 +143,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <StatsCounter />
+      <StatsCounter stats={content.stats} />
 
       {/* Certifications & Partners */}
       <section className="py-20 bg-[#0A1628]">
@@ -159,7 +155,7 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {CERTIFICATIONS.map((cert) => (
+            {certifications.map((cert: { name: string; issuer: string }) => (
               <div
                 key={cert.name}
                 className="bg-[#0F1E35] border border-white/10 rounded-xl p-4 text-center hover:border-cyan-500/30 transition-colors duration-300"
