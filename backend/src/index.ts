@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import contactRouter from './routes/contact';
+import newsRouter from './routes/news';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -22,8 +23,16 @@ const contactLimiter = rateLimit({
   legacyHeaders: false,
 });
 
+const newsLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
 // Routes
 app.use('/api/contact', contactLimiter, contactRouter);
+app.use('/api/news', newsLimiter, newsRouter);
 
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', message: 'CodexUg API is running' });
