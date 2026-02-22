@@ -19,13 +19,29 @@
     "role": "Computer Scientist & IT Expert",
     "bio1": "Mask o Kenneth is a highly accomplished computer scientist with deep expertise across multiple domains of information technology. With a passion for solving complex business challenges through technology, he founded CodexUg to provide world-class IT services to businesses in Uganda and East Africa.",
     "bio2": "His extensive certifications and hands-on experience in network security, cloud engineering, and IT infrastructure make him one of the most qualified IT professionals in the region. Under his leadership, CodexUg has delivered transformative technology solutions to over 500 clients.",
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+    "image": "/images/uploads/1771780925713-7ba152e5.jpg"
   },
   "stats": [
-    { "label": "Happy Clients", "value": 500, "suffix": "+" },
-    { "label": "Projects Completed", "value": 1000, "suffix": "+" },
-    { "label": "Certifications", "value": 50, "suffix": "+" },
-    { "label": "Years Experience", "value": 10, "suffix": "+" }
+    {
+      "label": "Happy Clients",
+      "value": 500,
+      "suffix": "+"
+    },
+    {
+      "label": "Projects Completed",
+      "value": 1000,
+      "suffix": "+"
+    },
+    {
+      "label": "Certifications",
+      "value": 50,
+      "suffix": "+"
+    },
+    {
+      "label": "Years Experience",
+      "value": 10,
+      "suffix": "+"
+    }
   ],
   "services": [
     {
@@ -469,11 +485,29 @@
     }
   ],
   "certifications": [
-    { "name": "AWS Certified Solutions Architect", "issuer": "Amazon Web Services" },
-    { "name": "Microsoft Azure Administrator", "issuer": "Microsoft" },
-    { "name": "Google Cloud Professional", "issuer": "Google Cloud" },
-    { "name": "CompTIA Security+", "issuer": "CompTIA" },
-    { "name": "Certified Network Security Specialist", "issuer": "ICSI" },
-    { "name": "CCNA - Cisco Certified", "issuer": "Cisco" }
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services"
+    },
+    {
+      "name": "Microsoft Azure Administrator",
+      "issuer": "Microsoft"
+    },
+    {
+      "name": "Google Cloud Professional",
+      "issuer": "Google Cloud"
+    },
+    {
+      "name": "CompTIA Security+",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Certified Network Security Specialist",
+      "issuer": "ICSI"
+    },
+    {
+      "name": "CCNA - Cisco Certified",
+      "issuer": "Cisco"
+    }
   ]
 }
