@@ -32,7 +32,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 bg-[#0A1628]">
+      <section className="py-16 bg-gradient-to-b from-slate-50 to-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {PRODUCTS.map((product, index) => (
@@ -43,10 +43,10 @@ export default function ProductsPage() {
       </section>
 
       {/* Why buy from us */}
-      <section className="py-20 bg-[#060E1A]">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-3xl font-bold text-white mb-4">Why Buy From CodexUg?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Buy From CodexUg?</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -57,11 +57,11 @@ export default function ProductsPage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-[#0F1E35] border border-white/10 rounded-xl p-6 text-center hover:border-cyan-500/30 transition-colors duration-300"
+                className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-cyan-500/30 transition-colors duration-300"
               >
                 <span className="text-4xl block mb-4">{item.icon}</span>
-                <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-400 text-sm">{item.desc}</p>
+                <h3 className="text-gray-900 font-semibold mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>

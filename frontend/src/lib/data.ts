@@ -344,6 +344,16 @@ export const PRODUCTS = [
     category: "Power",
   },
   {
+    id: "voip",
+    title: "VoIP Phones & Unified Communication Systems",
+    description:
+      "Business-grade VoIP phones, PBX systems, and unified communication solutions for crystal-clear calls, video conferencing, and seamless team collaboration.",
+    image:
+      "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=800&q=80",
+    priceRange: "From UGX 200,000",
+    category: "Communication",
+  },
+  {
     id: "cloud-hosting",
     title: "Cloud Hosting Packages",
     description:
