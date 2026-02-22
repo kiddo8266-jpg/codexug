@@ -31,10 +31,8 @@ export default function RelatedArticles({ topic, category }: Props) {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const apiBase = process.env.NEXT_PUBLIC_API_URL ?? "";
-
     fetch(
-      `${apiBase}/api/news?topic=${encodeURIComponent(topic)}&category=${encodeURIComponent(category)}`
+      `/api/news?topic=${encodeURIComponent(topic)}&category=${encodeURIComponent(category)}`
     )
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch articles");
