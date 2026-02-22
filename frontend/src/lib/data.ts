@@ -460,6 +460,18 @@ export const FAQS = [
 
 export const BLOG_POSTS = [
   {
+    id: 7,
+    title: "AI, Jobs, and the Future of Programming",
+    excerpt:
+      "AI is reshaping the job market and transforming software development. Explore how tools like GitHub Copilot and ChatGPT are changing the role of programmers, whether AI will replace developers, and how businesses can leverage AI and automation to stay competitive.",
+    image:
+      "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+    date: "2025-02-20",
+    category: "AI & Automation",
+    readTime: "6 min read",
+    slug: "ai-jobs-future-of-programming",
+  },
+  {
     id: 1,
     title: "5 Cybersecurity Threats Every Business Must Know in 2024",
     excerpt:
